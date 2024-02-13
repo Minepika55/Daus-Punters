@@ -135,7 +135,7 @@ int main()
         }
 
 
-    } while (Opcio == 1);
+    } while (Diners > 0 && Opcio == 1);
 
     cout << "##### Espero que haguis aconseguit una gran fortuna #####" << endl;
 
