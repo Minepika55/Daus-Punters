@@ -104,6 +104,4 @@ int main()
     } while (Diners > 0 && Opcio == 1);// El bucle s'acaba si el jugador vol deixar de jugar o si se li acaben els diners.
 
     cout << "##### Espero que haguis aconseguit una gran fortuna #####" << endl;//finalment em despedeixo del jugador.
-
-
 }
