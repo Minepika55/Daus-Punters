@@ -74,7 +74,7 @@ int main()
         }
 
         //Aqui es gestionen els resultats del jugador
-        if (Resultat == Numero +1) {
+        if (Resultat == Numero +1) {//Per si ens passem per un punt amunt.
 
             cout << "##### Casi! T'has passat per poc #####" << endl;
 
@@ -86,7 +86,7 @@ int main()
 
             continue;
         }
-        if (Resultat == Numero - 1) {
+        if (Resultat == Numero - 1) {//Per si ens passem per un punt avall.
 
             cout << "##### Casi! T'has passat per poc #####" << endl;
 
@@ -98,7 +98,7 @@ int main()
 
             continue;
         }
-        if (Resultat == Numero + 2) {
+        if (Resultat == Numero + 2) {//Per si ens passem per dos punts amunt.
 
             cout << "##### Casi! T'has passat per dos numeors #####" << endl;
 
@@ -110,7 +110,7 @@ int main()
 
             continue;
         }
-        if (Resultat == Numero - 2) {
+        if (Resultat == Numero - 2) {//Per si ens passem per dos punts avall.
 
             cout << "##### Casi! T'has passat per dos numeors #####" << endl;
 
@@ -124,7 +124,7 @@ int main()
         }
 
 
-        if (Resultat != Numero) {
+        if (Resultat != Numero) {//Per si ens passem per mes de dos punts amunt o avall.
 
             cout << "##### Mala Sort #####" << endl;
 
@@ -136,9 +136,9 @@ int main()
         }
 
 
-    } while (Diners > 0 && Opcio == 1);
+    } while (Diners > 0 && Opcio == 1);// El bucle s'acaba si el jugador vol deixar de jugar o si se li acaben els diners.
 
-    cout << "##### Espero que haguis aconseguit una gran fortuna #####" << endl;
+    cout << "##### Espero que haguis aconseguit una gran fortuna #####" << endl;//finalment em despedeixo del jugador.
 
 
 }
