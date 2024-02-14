@@ -35,7 +35,6 @@ int main()
     do
     {
         if (Diners <= 0) {//Comprovem que el jugador disposi de diners suficients.
-
             cout << "##### T'has quedat sense diners! #####" << endl;
             break;
         }
@@ -49,89 +48,55 @@ int main()
         cin >> Numero;
 
         Tirada1 = rand() % 6 + 1;//Calculem la primera tirada.
-
         cout << "##### Primera tirada, es un " << Tirada1 << " #####" << endl;
-
         Tirada2 = rand() % 6 + 1;//Calculem la segona tirada.
-
         cout << "##### Segona tirada, es un " << Tirada2 << " #####" << endl;
-
         Resultat = Tirada1 + Tirada2;//Calculem el numero final.
-
         cout << "##### El numero final es " << Resultat << " #####" << endl;
 
         if (Resultat == Numero) {//Si el resultat es exacte a la aposta multipliquem els diners apostats per 10.
-            
             cout << "##### Bravo has encertat #####" << endl;
-
             Diners = Diners + apostaDiners * 10;//Aqui fem el calcul necessari.
-
             cout << "##### Vols tornar a jugar? #####" << endl;
-
             cin >> Opcio;
-
             continue;
         }
 
         //Aqui es gestionen els resultats del jugador
         if (Resultat == Numero +1) {//Per si ens passem per un punt amunt.
-
             cout << "##### Casi! T'has passat per poc #####" << endl;
-
             Diners = Diners + apostaDiners * 2;
-
             cout << "##### Vols tornar a jugar? 1. Si 2. No #####" << endl;
-
             cin >> Opcio;
-
             continue;
         }
         if (Resultat == Numero - 1) {//Per si ens passem per un punt avall.
-
             cout << "##### Casi! T'has passat per poc #####" << endl;
-
             Diners = Diners + apostaDiners * 2;
-
             cout << "##### Vols tornar a jugar? 1. Si 2. No #####" << endl;
-
             cin >> Opcio;
-
             continue;
         }
         if (Resultat == Numero + 2) {//Per si ens passem per dos punts amunt.
-
             cout << "##### Casi! T'has passat per dos numeors #####" << endl;
-
             Diners = Diners + apostaDiners * 1;
-
             cout << "##### Vols tornar a jugar? 1. Si 2. No #####" << endl;
-
             cin >> Opcio;
-
             continue;
         }
         if (Resultat == Numero - 2) {//Per si ens passem per dos punts avall.
-
             cout << "##### Casi! T'has passat per dos numeors #####" << endl;
-
             Diners = Diners + apostaDiners * 1;
-
             cout << "##### Vols tornar a jugar? 1. Si 2. No #####" << endl;
-
             cin >> Opcio;
-
             continue;
         }
 
 
         if (Resultat != Numero) {//Per si ens passem per mes de dos punts amunt o avall.
-
             cout << "##### Mala Sort #####" << endl;
-
             cout << "##### Vols tornar a jugar? 1. Si 2. No #####" << endl;
-
             cin >> Opcio;
-
             continue;
         }
 
