@@ -73,6 +73,7 @@ int main()
             continue;
         }
 
+        //Aqui es gestionen els resultats del jugador
         if (Resultat == Numero +1) {
 
             cout << "##### Casi! T'has passat per poc #####" << endl;
